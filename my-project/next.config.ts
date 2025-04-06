@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: [""], // ✅ Allow Sanity images
+    domains: ["images.unsplash.com"], // ✅ Allow Sanity images
   },
   experimental: {
     ppr: "incremental",
