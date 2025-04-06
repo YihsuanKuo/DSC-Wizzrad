@@ -138,7 +138,7 @@ function calculateScore(player: Player): number {
 };
 
 
-export const setGameData = async () => {
+export const fetchGameData = async () => {
 
     try {
         const mergedFilePath = path.join(
