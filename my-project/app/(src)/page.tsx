@@ -3,19 +3,19 @@ import HomeContent from "@/components/HomeContent";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center h-[calc(100vh-4rem)] bg-[#F2F4F7] p-3">
-<<<<<<< HEAD
+    <div className="flex flex-row justify-between justify-center items-center h-[calc(100vh-4rem)] bg-[#F2F4F7] p-3 pl-[15%] pr-[15%]" >
+      <div className="relative  h-[200px] w-[300px] sm:h-[300px] sm:w-[500px]">
       <Image
         src="/assets/lebron.jpg"
         alt="LeBron James"
-        width={300}
-        height={400}
-        className="mb-4 rounded-lg shadow-lg"
+        fill
+        className="mb-4 rounded-lg shadow-lg object-cover"
       />
-=======
->>>>>>> 88a42c45be5e04e315697577532875776fa59c9a
+      </div>
       <HomeContent />
+      <div className="">
       <img src={"/assets/Basketball.png"} alt="A nice image" />
+      </div>
     </div>
   );
 }
