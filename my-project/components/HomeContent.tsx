@@ -17,7 +17,7 @@ const HomeContent = () => {
         <button
           onClick={() => handlePageChange("form")}
           className={`flex w-full h-full items-center justify-center transition duration-200 ease-in-out hover:bg-gray-300 active:bg-gray-300 ${
-            page === "form" ? "bg-gray-100" : ""
+            page === "form" ? "bg-gray-200" : ""
           }`}
         >
           Find your Legend
@@ -25,13 +25,13 @@ const HomeContent = () => {
         <button
           onClick={() => handlePageChange("guess")}
           className={`flex w-full h-full items-center justify-center transition duration-200 ease-in-out hover:bg-gray-300 active:bg-gray-300 ${
-            page === "guess" ? "bg-gray-100" : ""
+            page === "guess" ? "bg-gray-200" : ""
           }`}
         >
           Guess your legend
         </button>
       </div>
-      <div className="flex items-center justify-center w-full h-full">
+      <div className="flex items-center justify-center w-full h-full min-w-[300px]">
         {page === "form" ? <ReviewForm /> : <GuessYourLegend />}
       </div>
     </div>
